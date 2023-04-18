@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "RBLX Stats",
+  "name": "Roblox Game Stats",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": ".",
+  "start_url": "./roblox-game-stats",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
