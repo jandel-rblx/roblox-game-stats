@@ -1,0 +1,32 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    margin: 15px;
+
+    
+    background-color: var(--background-color);
+}
+
+.spacer {
+    width: 50%;
+
+    outline: 1px solid var(--background-color-lighter);
+    margin: 15px;
+}
+
+.game-list {
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}

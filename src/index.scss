@@ -1,0 +1,90 @@
+:root {
+    --background-color: #111317;
+    --background-color-light: #181b20;
+    --background-color-lighter: #21252c;
+
+    --discord-button-color: #6370F4;
+    --roblox-button-color: linear-gradient(195.36deg, #FEFFFF 16.35%, #A0ADBD 83.24%);
+    --special-button-color: linear-gradient(97.53deg, #00DBDB -0.1%, #00E591 99.9%);
+
+    --blur-color: hsla(0, 0%, 0%, 0.25);
+
+    --text-color: #FFFFFF;
+    --text-alt-color: #000000;
+    --highlight-color: #41c3f7;
+}
+
+@font-face {
+    font-family: 'Mona-Sans Medium';
+    src:
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-Medium.woff2') format('woff2 supports variations'),
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-Medium.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Mona-Sans Black Wide';
+    src:
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-BlackWide.woff2') format('woff2 supports variations'),
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-BlackWide.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Mona-Sans';
+    src:
+      url('/Fonts/Mona Sans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('/Fonts/Mona Sans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Mona-Sans Medium Wide';
+    src:
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-MediumWide.woff2') format('woff2 supports variations'),
+      url('/Fonts/Mona Sans/WOFF 2/Mona-Sans-MediumWide.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+html, body, #root, .app {
+    background-color: var(--background-color);  
+    margin: 0px;
+    font-family: "Mona-Sans", sans-serif;   
+    scrollbar-color: var(--highlight-color) #0000003b;
+    scrollbar-width: thin;  
+    ::-webkit-scrollbar {
+        width: 10px;
+    }   
+    ::-webkit-scrollbar-track {
+        background: #0000003b;
+    }   
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--highlight-color);
+        border-radius: 20px;
+        border: 3px solid #0000003b;
+    }
+
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p, b {
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
