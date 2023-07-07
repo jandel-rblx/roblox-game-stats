@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "https://jandel-rblx.github.io/roblox-game-stats/static/css/main.0b06ee9a.css",
-    "main.js": "https://jandel-rblx.github.io/roblox-game-stats/static/js/main.2de5e29a.js",
+    "main.js": "https://jandel-rblx.github.io/roblox-game-stats/static/js/main.e5d4b325.js",
     "static/media/Mona-Sans.woff2": "https://jandel-rblx.github.io/roblox-game-stats/static/media/Mona-Sans.955a87eb3766a32ac970.woff2",
     "static/media/Mona-Sans-MediumWide.woff2": "https://jandel-rblx.github.io/roblox-game-stats/static/media/Mona-Sans-MediumWide.5d54c6d8789c1cfa5201.woff2",
     "static/media/Mona-Sans-BlackWide.woff2": "https://jandel-rblx.github.io/roblox-game-stats/static/media/Mona-Sans-BlackWide.0a0727acefaafffee951.woff2",
     "static/media/Mona-Sans-Medium.woff2": "https://jandel-rblx.github.io/roblox-game-stats/static/media/Mona-Sans-Medium.1d13d02c97c2fffe114f.woff2",
     "index.html": "https://jandel-rblx.github.io/roblox-game-stats/index.html",
     "main.0b06ee9a.css.map": "https://jandel-rblx.github.io/roblox-game-stats/static/css/main.0b06ee9a.css.map",
-    "main.2de5e29a.js.map": "https://jandel-rblx.github.io/roblox-game-stats/static/js/main.2de5e29a.js.map"
+    "main.e5d4b325.js.map": "https://jandel-rblx.github.io/roblox-game-stats/static/js/main.e5d4b325.js.map"
   },
   "entrypoints": [
     "static/css/main.0b06ee9a.css",
-    "static/js/main.2de5e29a.js"
+    "static/js/main.e5d4b325.js"
   ]
 }
