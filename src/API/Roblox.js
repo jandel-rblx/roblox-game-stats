@@ -24,19 +24,40 @@ Roblox.proxyFetch = async function(sub_url, data) {
 }
 
 Roblox.getGameInfo = async function (placeIds) {
-    let info = await this.proxyFetch("jandelgames", `&games=${placeIds.join(",")}`);
-    
-    if (!info) {
-        return false;
-    }
+    // Since Roblox added a data limit to their API without saying a thing, we have to split the requests into 25 games each.
 
-    info = await info.json();
+    let combined_info = {
+        info: {
+            data: []
+        },
+        thumbnails: {
+            data: []
+        }
+    };
+
+    for (let i = 0; i < placeIds.length; i += 25) {
+        let info = await this.proxyFetch("jandelgames", `&games=${placeIds.slice(i, i + 25).join(",")}`);
+
+        if (!info) {
+            return false;
+        }
+
+        info = await info.json();
+
+        for (let key in info.info.data) {
+            combined_info.info.data.push(info.info.data[key]);
+        }
+
+        for (let key in info.thumbnails.data) {
+            combined_info.thumbnails.data.push(info.thumbnails.data[key]);
+        }
+    }
 
     let data = {};
     let totalPlaying = 0;
     let totalVisits = 0;
 
-    info.info.data.forEach((gameInfo) => {
+    combined_info.info.data.forEach((gameInfo) => {
         data[gameInfo.id] = {
             name: gameInfo.name,
             playing: gameInfo.playing,
@@ -49,7 +70,7 @@ Roblox.getGameInfo = async function (placeIds) {
         totalVisits += gameInfo.visits;
     });
 
-    info.thumbnails.data.forEach((thumb) => {
+    combined_info.thumbnails.data.forEach((thumb) => {
         if (!data[thumb.universeId]) {
             return;
         }
