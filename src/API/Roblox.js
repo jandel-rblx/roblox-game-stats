@@ -1,6 +1,6 @@
 let Roblox = {};
 
-Roblox.PROXY_URL = "https://typical-backend-n0kt.onrender.com/"
+Roblox.PROXY_URL = "https://jandel-backend.onrender.com/"
 Roblox.SECRET = "jandelgames" // Not really that "secret", just how the backend works.
 
 Roblox.proxyFetch = async function(sub_url, data) {
