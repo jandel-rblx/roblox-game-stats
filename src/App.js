@@ -79,6 +79,8 @@ class App extends React.Component {
                         })
                     }
                 </div>
+
+                <img src="NZoA_RGB_Game Sector Logo_WhiteText.png" alt="Game Sector Logo" className="game-sector-logo" width="513px" height="438px"/>
             </div>
         )
     }
