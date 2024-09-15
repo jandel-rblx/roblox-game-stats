@@ -30,7 +30,7 @@ jobs:
       run: PUBLIC_URL=https://jandel-rblx.github.io/roblox-game-stats CI=false npm run build
 
     - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: production-files
         path: ./build
